@@ -19,7 +19,7 @@ memo.md同様要素ごとに分割する予定...
 * README.md  
 このリポジトリについて...  
 
-## 使用ツール
-Android Studio  
-
+## 使用ツール、実行環境  
+* Android Studio  
+* JDK8  
 
