@@ -253,5 +253,15 @@ Mapビューと呼ばれる地図を表示する為の画面が追加される
 
 
 ↓開発準備↓
-Android 6.0 を実行するAVD...
+Android 6.0 を実行するAVD...  
+
+* Android Studioの日本語化  
+<https://fidscreate.com/tool/android-studio#japanese3>  
+条件： **Android Studio3.0 以上**  
+Pleiadesプラグインを使用  
+Pleiadesプラグインの解凍はWindowsエクスプローラー、7-Zip、WinRARにて正常に解凍、動作することが確認されている為解凍の際注意  
+正常に解凍が完了すると「setup.exe」へのショートカットがあるので選択  
+**Pleiades日本語化プラグインのセットアップ** が立ち上がる  
+日本語化するアプリケーションにAndroid Studio実行ファイル(studioXX.exe)を選択し、日本語化するボタンを押下  
+
 
