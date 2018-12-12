@@ -1,6 +1,10 @@
+# ___ (課題)AndroidStudio ワークスペースGitHub管理方法について考える ___  
+(少し古め) <https://qiita.com/hisurga/items/28a707c6d53caf0423f2>
+##### <http://gihyo.jp/dev/serial/01/android_studio/0024>
+---
 # Android  
 
-最終編集日時:2018/11/05
+最終編集日時:2018/12/13
 
 
 ## Androidとは  
