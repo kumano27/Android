@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ManyButton</string>
+    <string name="message">最寄りの施設までの距離</string>
+    <string name="btn1_tap">「1.6km」です</string>
+    <string name="btn2_tap">「0.8km」です</string>
+    <string name="btn3_tap">「2.4km」です</string>
+    <string name="btn1_txt">駅</string>
+    <string name="btn2_txt">銀行</string>
+    <string name="btn3_txt">郵便局</string>
+</resources>
