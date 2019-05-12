@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ButtonTap</string>
+    <string name="message">ここにメッセージを表示します。</string>
+    <string name="btn_txt">ButtonTap</string>
+</resources>
