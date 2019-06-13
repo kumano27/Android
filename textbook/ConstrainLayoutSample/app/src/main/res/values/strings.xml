@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ConstrainLayout サンプル</string>
+    <string name="tv_title">必要な情報を入力してください。</string>
+    <string name="tv_name">名前</string>
+    <string name="tv_mail">メールアドレス</string>
+    <string name="tv_comment">質問内容</string>
+    <!--
+    下記 string name だとデザインベース時作業しずらかった為名前変更
+    基本的にはテキストベースで作成していたが、この章のみ特別
+    <string name="bt_confirm">確認</string>
+    -->
+    <string name="bt_confirm_evacuation">確認</string>
+    <string name="bt_send">送信</string>
+    <string name="bt_clear">クリア</string>
+</resources>
