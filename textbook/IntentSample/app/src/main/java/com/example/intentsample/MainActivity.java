@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         menu.put("price","850円");
         menuList.add(menu);
 
+
         // SimpleAdapter 第4引数from用データの用意
         String[] from = {"name","price"};
         // SimpleAdapter 第5引数to用データの用意
@@ -110,5 +111,6 @@ public class MainActivity extends AppCompatActivity {
             // 第2画面の起動
             startActivity(intent);
         }
+
     }
 }
