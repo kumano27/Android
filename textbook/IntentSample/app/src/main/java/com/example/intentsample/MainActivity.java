@@ -1,7 +1,10 @@
 package com.example.intentsample;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -61,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
         menu.put("name","コロッケ定食");
         menu.put("price","850円");
         menuList.add(menu);
+        menu = new HashMap<>();
+        menu.put("name","焼き魚定食");
+        menu.put("price","850円");
+        menuList.add(menu);
+
 
         // SimpleAdapter 第4引数from用データの用意
         String[] from = {"name","price"};
@@ -75,5 +83,34 @@ public class MainActivity extends AppCompatActivity {
         SimpleAdapter adapter = new SimpleAdapter(MainActivity.this,menuList,android.R.layout.simple_list_item_2, from, to);
         // アダプタの生成
         lvMenu.setAdapter(adapter);
+
+        // リストタップのリスナクラス実装
+        lvMenu.setOnItemClickListener(new ListItemClickListener());
+    }
+    /**
+     * リストがタップされたときの処理記述されたメンバクラス
+     */
+    private class ListItemClickListener implements AdapterView.OnItemClickListener{
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            // タップされた行のデータを取得、SimpleAdapter では1行分のデータはMap型
+            Map<String, String> item = (Map<String, String>) parent.getItemAtPosition(position);
+
+            // 定食名と金額を取得
+            String menuName = item.get("name");
+            String menuPrice = item.get("price");
+
+            // インテントオブジェクトを生成
+            Intent intent = new Intent(MainActivity.this, MenuThanksActivity.class);
+
+            // 第2画面に送るデータを格納
+            intent.putExtra("menuName",menuName);
+            intent.putExtra("menuPrice",menuPrice);
+
+            // 第2画面の起動
+            startActivity(intent);
+        }
+
     }
 }
